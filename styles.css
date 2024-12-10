@@ -1,0 +1,36 @@
+/* styles.css */
+
+/* Grundläggande styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navigation {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    display: flex; /* Aktiverar Flexbox */
+    justify-content: space-around; /* Sprider elementen jämnt */
+    list-style: none; /* Tar bort punkter från listan */
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none; /* Tar bort understrykning */
+    color: white;
+    padding: 10px 20px; /* Gör klickytan större */
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #575757; /* Ändrar bakgrundsfärg vid hover */
+    border-radius: 5px; /* Rundar hörnen */
+}
