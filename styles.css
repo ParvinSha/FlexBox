@@ -4,6 +4,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .navigation {
@@ -33,4 +34,49 @@ body {
 .navigation a:hover {
     background-color: #575757; /* Ändrar bakgrundsfärg vid hover */
     border-radius: 5px; /* Rundar hörnen */
+}
+
+
+/* Responsiv Kortlayout */
+.card-container {
+    display: flex; /* Aktiverar Flexbox */
+    flex-wrap: wrap; /* Tillåter radbrytning */
+    justify-content: center; /* Centrera korten horisontellt */
+    gap: 20px; /* Avstånd mellan korten */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1 1 calc(25% - 2rem); /* Anpassa kortbredd */
+    min-width: 200px; /* Sätt en minsta bredd för kort */
+    max-width: 300px; /* Begränsa maximal bredd */
+}
+
+.card:hover {
+    background-color: #0056b3; /* Ändrar färg vid hover */
+    cursor: pointer;
+}
+
+/* Media Queries för att hantera mindre skärmar */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 2rem); /* Anpassa bredd till två kort per rad */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* Ett kort per rad på riktigt små skärmar */
+    }
 }
