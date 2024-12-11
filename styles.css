@@ -2,6 +2,7 @@
 
 /* Grundläggande styling */
 body {
+    height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -37,7 +38,7 @@ body {
 }
 
 
-/* Responsiv Kortlayout */
+/*  Responsiv Kortlayout */
 .card-container {
     display: flex; /* Aktiverar Flexbox */
     flex-wrap: wrap; /* Tillåter radbrytning */
@@ -82,7 +83,7 @@ body {
 }
 
 
-/* Responsiv Footer  */
+/*  Responsiv Footer  */
 .footer {
     display: flex;
     flex-wrap: wrap; /* Gör att sektionerna radbryts på små skärmar */
@@ -118,4 +119,21 @@ body {
       flex-direction: column; /* Staplar sektionerna vertikalt */
       align-items: center; /* Centrerar sektionerna */
     }
+  }
+
+/*  Vertikalt och Horisontellt Centrerad Layout  */
+  .container {
+    display: flex; /* Aktivera Flexbox */
+    justify-content: center; /* Centrerar horisontellt */
+    align-items: center; /* Centrerar vertikalt */
+    height: 100vh; /* Full höjd av fönstret */
+    background-color: #f0f0f0;
+  }
+  
+  .centered-content {
+    padding: 20px;
+    background-color: #0078d4;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
   }
