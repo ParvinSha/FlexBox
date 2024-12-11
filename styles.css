@@ -80,3 +80,42 @@ body {
         flex: 1 1 100%; /* Ett kort per rad på riktigt små skärmar */
     }
 }
+
+
+/* Responsiv Footer  */
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Gör att sektionerna radbryts på små skärmar */
+    justify-content: space-between; /* Ger mellanrum mellan sektionerna på breda skärmar */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px; /* Gör sektionerna flexibla och anger en minsta bredd */
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Anpassning för små skärmar */
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column; /* Staplar sektionerna vertikalt */
+      align-items: center; /* Centrerar sektionerna */
+    }
+  }
